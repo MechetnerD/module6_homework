@@ -5,13 +5,12 @@ function isPrimeNumber(number) {
     console.log("Данные неверны.");
     return;
   }
-    for (let i = 2; i <= Math.sqrt(number); i++) {
-      if (number % i === 0) {
-        console.log(`${number} не является простым числом`);
-        return;
-      }
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      console.log(`${number} не является простым числом`);
+      return;
     }
-  
+  }
+
   console.log(`${number} является простым числом`);
 }
-
